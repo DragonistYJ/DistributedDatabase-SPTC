@@ -69,6 +69,10 @@ public class SnowFlake {
             if (sequence == 0) {
                 timestamp = tilNextMillis(lastTimestamp);
             }
+//            sequence += 1;
+//            if (sequence > sequenceMask) {
+//                timestamp = tilNextMillis(lastTimestamp);
+//            }
         } else {
             sequence = 0;
         }
